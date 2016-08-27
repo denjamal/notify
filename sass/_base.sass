@@ -1,0 +1,138 @@
+*, *:before, *:after
+  box-sizing: border-box
+
+body, html, *
+  margin: 0
+  padding: 0
+
+main, section
+  width: $baseSiteWidth
+  margin: 0 auto
+  
+*
+  max-height: 1000000px
+
+a, button
+  outline: none
+
+// extend class
+.href
+  text-decoration: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+.vam
+  display: inline-block
+  height: 100%
+  vertical-align: middle
+  width: 0
+
+/*error class for form*/
+.error
+  box-shadow: inset 1.5px 2.6px 7px rgba(137, 37, 37, 0.9) !important
+
+.error::-webkit-input-placeholder
+  color: #892525
+
+.error::-moz-placeholder
+  color: #892525
+
+/* Firefox 19+ */
+.error:-moz-placeholder
+  color: #892525
+
+/* Firefox 18- */
+.error:-ms-input-placeholder
+  color: #892525
+/*error class for form*/
+
+header
+  background: $colorMainBlue
+  height: 80px
+
+  section
+    line-height: 80px
+    height: 100%
+
+  a
+    color: $colorWhite
+    &:hover, &:active, &:focus
+      color: $colorWhite
+      text-decoration: none
+
+  .logo
+    float: left
+    display: inline-block
+
+    a
+      font: 37px $AvenirBold
+      display: inline-block
+
+      h3
+        font-weight: 700
+        margin: 0
+
+  nav
+    float: right
+    display: inline-block
+    height: 66px
+
+    ul
+      list-style-type: none
+      margin: 0
+      height: 100%
+      padding-top: 18px
+
+      li
+        float: left
+        margin-right: 25px
+        display: inline-block
+        height: 44px
+        line-height: 44px
+        a
+          padding: 0 30px 0 55px
+          border-radius: 5px
+          background: #18497b url(../img/sprite-menu.png) no-repeat
+          transition: background-color 0.3s
+          cursor: pointer
+          display: inline-block
+
+        & a:hover
+          background-color: #5280af
+
+        &:nth-child(1)
+          a
+            background-position: 15px 9px
+
+        &:nth-child(2)
+          a
+            background-position: 15px -75px
+
+        &:nth-child(3)
+          a
+            background-position: 15px -161px
+
+        &:nth-child(4)
+          a
+            background-position: 15px -265px
+
+        &:nth-child(5)
+          a
+            padding-left: 30px
+            background-position: -100px -100px
+
+
+
+    .active
+      background-color: #5280af
+
+.pageTitle
+  font: 36px $AvenirRegular
+  color: #000000
+  padding-left: 73px
+  text-align: left
+  margin-top: 65px
+  margin-bottom: 40px
+
+

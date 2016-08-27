@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" id ="loginPage">
+	<head>
+		<meta charset="utf-8" />
+		<title>Notify login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--для адаптивного дизайна-->
+		<link rel="stylesheet" type = "text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type = "text/css" href="libs/bootstrap/bootstrap.css" /><!--bootstrap-->
+		<link rel="stylesheet" type = "text/css" href="libs/font%20awesome/css/font-awesome.min.css" /><!--font awesome-->
+		<link rel="stylesheet" type = "text/css" href="css/fonts.css" /><!--fonts-->
+		<link rel="stylesheet" type = "text/css" href="css/main.css" /><!--main css-->
+		<link rel="stylesheet" type = "text/css" href="css/media.css" /><!--@media-->	
+		<!--[if lt IE 10]>
+    		<script src="libs/html5shiv/html5shiv.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<main>
+			<h2>Notify</h2>
+			<form action="#" class="loginForm">
+				<div class="loginForm__wrapper">
+					<input type="email" class="form-control" placeholder="Email Address" name="Email"/>
+					<input type="password" class="form-control" placeholder="Password" name="Password"/>
+					<input type="submit" class="form-control" value="login" />
+					<input type="checkbox" name="RememberMe" checked="checked" class="hidden" id ="RememberMe"/>
+					<label for="RememberMe" class="fakeCheckBox"><span>Remember me</span></label>
+				</div>
+			</form>
+		</main>
+		<script src="libs/jquery/jquery-1.11.3.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

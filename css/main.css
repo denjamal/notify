@@ -1,0 +1,229 @@
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body, html, * {
+  margin: 0;
+  padding: 0; }
+
+main, section {
+  width: 1282px;
+  margin: 0 auto; }
+
+* {
+  max-height: 1000000px; }
+
+a, button {
+  outline: none; }
+
+.href, .dashBoardNav ul li a {
+  text-decoration: none; }
+  .href:hover, .dashBoardNav ul li a:hover, .href:focus, .dashBoardNav ul li a:focus {
+    text-decoration: none; }
+
+.vam {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 0; }
+
+/*error class for form */
+.error {
+  box-shadow: inset 1.5px 2.6px 7px rgba(137, 37, 37, 0.9) !important; }
+
+.error::-webkit-input-placeholder {
+  color: #892525; }
+
+.error::-moz-placeholder {
+  color: #892525; }
+
+/* Firefox 19+ */
+.error:-moz-placeholder {
+  color: #892525; }
+
+/* Firefox 18- */
+.error:-ms-input-placeholder {
+  color: #892525; }
+
+/*error class for form */
+header {
+  background: #346aa1;
+  height: 80px; }
+  header section {
+    line-height: 80px;
+    height: 100%; }
+  header a {
+    color: #FFF; }
+    header a:hover, header a:active, header a:focus {
+      color: #FFF;
+      text-decoration: none; }
+  header .logo {
+    float: left;
+    display: inline-block; }
+    header .logo a {
+      font: 37px "AvenirNextLTPro-Bold";
+      display: inline-block; }
+      header .logo a h3 {
+        font-weight: 700;
+        margin: 0; }
+  header nav {
+    float: right;
+    display: inline-block;
+    height: 66px; }
+    header nav ul {
+      list-style-type: none;
+      margin: 0;
+      height: 100%;
+      padding-top: 18px; }
+      header nav ul li {
+        float: left;
+        margin-right: 25px;
+        display: inline-block;
+        height: 44px;
+        line-height: 44px; }
+        header nav ul li a {
+          padding: 0 30px 0 55px;
+          border-radius: 5px;
+          background: #18497b url(../img/sprite-menu.png) no-repeat;
+          transition: background-color 0.3s;
+          cursor: pointer;
+          display: inline-block; }
+        header nav ul li a:hover {
+          background-color: #5280af; }
+        header nav ul li:nth-child(1) a {
+          background-position: 15px 9px; }
+        header nav ul li:nth-child(2) a {
+          background-position: 15px -75px; }
+        header nav ul li:nth-child(3) a {
+          background-position: 15px -161px; }
+        header nav ul li:nth-child(4) a {
+          background-position: 15px -265px; }
+        header nav ul li:nth-child(5) a {
+          padding-left: 30px;
+          background-position: -100px -100px; }
+    header nav .active {
+      background-color: #5280af; }
+
+.pageTitle {
+  font: 36px "AvenirNextLTPro-Regular";
+  color: #000000;
+  padding-left: 73px;
+  text-align: left;
+  margin-top: 65px;
+  margin-bottom: 40px; }
+
+#loginPage {
+  min-height: 100vh;
+  min-height: 100%;
+  background: linear-gradient(to bottom, #518ac7 0%, #30649b 50%, #30649b 51%, #1f5284 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#518ac7', endColorstr='#1f5284', GradientType=0 ); }
+  #loginPage body {
+    height: 100%;
+    height: 100vh;
+    min-height: 600px;
+    position: relative;
+    width: 1282px;
+    margin: 0 auto;
+    background-color: transparent; }
+    #loginPage body main {
+      position: absolute;
+      width: 494px;
+      height: 500px;
+      top: 50%;
+      left: 50%;
+      margin-top: -250px;
+      margin-left: -247px; }
+      #loginPage body main h2 {
+        color: #FFF;
+        font: 70px "AvenirNextLTPro-Bold";
+        text-align: center; }
+  #loginPage .loginForm {
+    width: 100%;
+    height: 316px;
+    background: #FFF;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
+    margin-top: 50px;
+    padding-top: 45px; }
+    #loginPage .loginForm__wrapper {
+      width: 361px;
+      margin: 0 auto; }
+    #loginPage .loginForm input {
+      background: #f2f2f2;
+      font-family: "AvenirNextLTPro-Regular";
+      margin-bottom: 20px; }
+    #loginPage .loginForm input[type=submit] {
+      background: #5fbf25 !important;
+      border-color: #49931c;
+      text-transform: uppercase;
+      color: #FFF; }
+    #loginPage .loginForm label {
+      font-weight: 400;
+      font: 14px "AvenirNextLTPro-Regular";
+      color: #000; }
+
+.form-control {
+  height: 49px;
+  font: 18px "AvenirMedium";
+  color: #000;
+  padding-left: 25px; }
+  .form-control input[type=submit] {
+    background: #5fbf25 !important;
+    border-color: #49931c;
+    text-transform: uppercase;
+    color: #FFF; }
+
+input[type=checkbox]:checked + label:before {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJxJREFUeNpiZMADlOUVzIHUOiCOZcSjSA9IHQZiPiB+xQQV1EFTpAuk9kIVfQfiSGagYBWQsUZIQODV+48fzgD5GkD+QSAWgSryufvwwT5moIK5QI4wEHsB2SCJqUAsAcS/gTgMqGgHyBZGoAkyQPoAyEYk20GKQoCKNsEEGKFuAik+CsRyQPwP5CagolW4fKkCxPeBOBqbPECAAQDUQSmfIgJ7NgAAAABJRU5ErkJggg==") center center no-repeat; }
+
+.fakeCheckBox {
+  text-align: center;
+  display: block; }
+  .fakeCheckBox span {
+    display: inline-block;
+    vertical-align: middle; }
+  .fakeCheckBox:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #848484;
+    vertical-align: middle;
+    margin-right: 10px;
+    cursor: pointer; }
+
+.dashBoardNav ul {
+  list-style-type: none;
+  text-align: left; }
+  .dashBoardNav ul li {
+    display: inline-block; }
+    .dashBoardNav ul li a {
+      width: 307px;
+      height: 140px;
+      background: #ebebeb url(../img/dashBoardSprite.png) no-repeat;
+      border: 1px solid #d9d9d9;
+      border-radius: 5px;
+      display: inline-block;
+      margin-right: 30px;
+      transition: -webkit-transform 0.3s;
+      transition: transform 0.3s;
+      transition: transform 0.3s, -webkit-transform 0.3s;
+      padding-left: 140px;
+      vertical-align: top; }
+      .dashBoardNav ul li a:hover {
+        -webkit-transform: scale(1.1, 1.1);
+            -ms-transform: scale(1.1, 1.1);
+                transform: scale(1.1, 1.1); }
+      .dashBoardNav ul li a span {
+        vertical-align: middle;
+        display: inline-block;
+        font: 20px "AvenirMedium";
+        color: #000; }
+  .dashBoardNav ul li:nth-child(1) a {
+    background-position: 25px 20px; }
+  .dashBoardNav ul li:nth-child(2) a {
+    background-position: 25px -179px; }
+  .dashBoardNav ul li:nth-child(3) a {
+    background-position: 25px -406px; }
+.dashBoardNav__number {
+  font-size: 40px !important; }
+
+/*# sourceMappingURL=main.css.map */

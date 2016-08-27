@@ -1,0 +1,33 @@
+
+@font-face {
+	font-family: 'AvenirNextLTPro-Bold';
+	src: url('../fonts/AvenirNextLTPro-Bold/AvenirNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/AvenirNextLTPro-Bold/AvenirNextLTPro-Bold.otf')  format('opentype'),
+	url('../fonts/AvenirNextLTPro-Bold/AvenirNextLTPro-Bold.woff') format('woff'),
+	url('../fonts/AvenirNextLTPro-Bold/AvenirNextLTPro-Bold.ttf')  format('truetype'),
+	url('../fonts/AvenirNextLTPro-Bold/AvenirNextLTPro-Bold.svg#AvenirNextLTPro-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AvenirNextLTPro-Regular';
+	src: url('../fonts/AvenirNextLTPro-Regular/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/AvenirNextLTPro-Regular/AvenirNextLTPro-Regular.otf')  format('opentype'),
+	url('../fonts/AvenirNextLTPro-Regular/AvenirNextLTPro-Regular.woff') format('woff'),
+	url('../fonts/AvenirNextLTPro-Regular/AvenirNextLTPro-Regular.ttf')  format('truetype'),
+	url('../fonts/AvenirNextLTPro-Regular/AvenirNextLTPro-Regular.svg#AvenirNextLTPro-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* font-family: "MuseoSansMedium"; */
+@font-face {
+	font-family: "AvenirMedium";
+	src: url("../fonts/MuseoSansMedium/MuseoSansMedium.eot");
+	src: url("../fonts/MuseoSansMedium/MuseoSansMedium.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MuseoSansMedium/MuseoSansMedium.woff") format("woff"),
+	url("../fonts/MuseoSansMedium/MuseoSansMedium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

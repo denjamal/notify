@@ -1,0 +1,46 @@
+
+.dashBoardNav
+
+  ul
+    list-style-type: none
+    text-align: left
+
+    li
+      display: inline-block
+
+      a
+        width: 307px
+        height: 140px
+        background: rgb(235, 235, 235) url(../img/dashBoardSprite.png) no-repeat
+        border: 1px solid rgb(217, 217, 217)
+        border-radius: 5px
+        display: inline-block
+        margin-right: 30px
+        transition: transform 0.3s
+        padding-left: 140px
+        vertical-align: top
+        @extend .href
+
+        &:hover
+          transform: scale(1.1, 1.1)
+
+        span
+          vertical-align: middle
+          display: inline-block
+          font: 20px $AvenirMedium
+          color: #000
+        
+    li:nth-child(1)
+      a
+        background-position: 25px 20px
+
+    li:nth-child(2)
+      a
+        background-position: 25px -179px
+
+    li:nth-child(3)
+      a
+        background-position: 25px -406px
+
+  &__number
+    font-size: 40px !important

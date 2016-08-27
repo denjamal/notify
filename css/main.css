@@ -126,6 +126,27 @@ header {
   vertical-align: middle;
   display: inline-block; }
 
+.mfp-content {
+  text-align: center; }
+
+.mfp-close {
+  font: 50px "AvenirNextLTPro-Regular";
+  color: #000; }
+
+#save-popup {
+  width: 494px;
+  height: 180px;
+  background: #FFF;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
+  display: inline-block;
+  position: relative;
+  text-align: center; }
+  #save-popup input {
+    display: inline-block; }
+  #save-popup h3 {
+    font: 36px "AvenirNextLTPro-Regular";
+    margin-bottom: 0; }
+
 #loginPage {
   min-height: 100vh;
   min-height: 100%;

@@ -8,6 +8,7 @@
     <link rel="stylesheet" type = "text/css" href="libs/bootstrap/bootstrap.css" /><!--bootstrap-->
     <link rel="stylesheet" type = "text/css" href="libs/font%20awesome/css/font-awesome.min.css" /><!--font awesome-->
     <link rel="stylesheet" type = "text/css" href="css/fonts.css" /><!--fonts-->
+    <link rel="stylesheet" type = "text/css" href="libs/Magnific-popup/dist/magnific-popup.css" /><!--magnific-popup-->
     <link rel="stylesheet" type = "text/css" href="css/main.css" /><!--main css-->
     <link rel="stylesheet" type = "text/css" href="css/media.css" /><!--@media-->
     <!--[if lt IE 10]>
@@ -68,7 +69,7 @@
                         <option value="testValue">London UTC +00:00</option>
                     </select>
                 </div>
-                <input type="submit" class ="form-control" value ="SAVE"/>
+                <input type="submit" class ="form-control popupSave" value ="SAVE"/>
             </form>
         </div>
         <div>
@@ -122,7 +123,7 @@
                     <label for="confDescription">Description</label>
                     <input type="text" class="form-control" id="confDescription" placeholder="" value="Get updates and offers from Bild.de by subscribing to push notifications">
                 </div>
-                <input type="submit" class ="form-control" value ="SAVE"/>
+                <input type="submit" class ="form-control popupSave" value ="SAVE"/>
             </form>
         </div>
     </aside>
@@ -138,7 +139,14 @@
         </div>
     </div>
 </main>
+<!--magnific popup hidden block-->
+<div id="save-popup" class="mfp-hide">
+    <h3>Saved</h3>
+    <input type="submit" value="Ok" class="closePopup form-control"/>
+</div>
+<!--magnific popup hidden block-->
 <script src="libs/jquery/jquery-1.11.3.min.js"></script>
+<script src="libs/Magnific-popup/dist/jquery.magnific-popup.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

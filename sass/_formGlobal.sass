@@ -4,11 +4,12 @@
   color: #000
   padding-left: 25px
 
-  input[type=submit]
-    background: $submitButton !important
-    border-color: rgb(73, 147,28)
-    text-transform: uppercase
-    color: $colorWhite
+input[type=submit]
+  background: $submitButton !important
+  border-color: rgb(73, 147,28)
+  text-transform: uppercase
+  color: $colorWhite
+  padding: 0
 
 
 input[type=checkbox]:checked + label 
@@ -32,3 +33,16 @@ input[type=checkbox]:checked + label
     vertical-align: middle
     margin-right: 10px
     cursor: pointer
+
+.settingsForm
+  background: rgb(242, 242, 242)
+  border: $colorForBorder
+  padding: 35px 30px
+
+  label
+    font: 18px $AvenirDemi
+    color: #000
+    margin-bottom: 15px
+    
+  input
+    margin-bottom: 28px

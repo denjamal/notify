@@ -106,10 +106,25 @@ header {
 .pageTitle {
   font: 36px "AvenirNextLTPro-Regular";
   color: #000000;
-  padding-left: 73px;
+  padding: 10px 73px;
   text-align: left;
-  margin-top: 65px;
-  margin-bottom: 40px; }
+  margin-top: 55px;
+  margin-bottom: 30px; }
+
+.description {
+  font: 14px "AvenirNextLTPro-Regular";
+  color: #000;
+  margin-top: 5px;
+  display: inline-block; }
+
+.copyBtn {
+  width: 24px;
+  height: 23px;
+  outline: none;
+  border: none;
+  background: url(../img/copy.png) no-repeat center center;
+  vertical-align: middle;
+  display: inline-block; }
 
 #loginPage {
   min-height: 100vh;
@@ -165,11 +180,13 @@ header {
   font: 18px "AvenirMedium";
   color: #000;
   padding-left: 25px; }
-  .form-control input[type=submit] {
-    background: #5fbf25 !important;
-    border-color: #49931c;
-    text-transform: uppercase;
-    color: #FFF; }
+
+input[type=submit] {
+  background: #5fbf25 !important;
+  border-color: #49931c;
+  text-transform: uppercase;
+  color: #FFF;
+  padding: 0; }
 
 input[type=checkbox]:checked + label:before {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJxJREFUeNpiZMADlOUVzIHUOiCOZcSjSA9IHQZiPiB+xQQV1EFTpAuk9kIVfQfiSGagYBWQsUZIQODV+48fzgD5GkD+QSAWgSryufvwwT5moIK5QI4wEHsB2SCJqUAsAcS/gTgMqGgHyBZGoAkyQPoAyEYk20GKQoCKNsEEGKFuAik+CsRyQPwP5CagolW4fKkCxPeBOBqbPECAAQDUQSmfIgJ7NgAAAABJRU5ErkJggg==") center center no-repeat; }
@@ -189,6 +206,17 @@ input[type=checkbox]:checked + label:before {
     vertical-align: middle;
     margin-right: 10px;
     cursor: pointer; }
+
+.settingsForm {
+  background: #f2f2f2;
+  border: 1px solid #d9d9d9;
+  padding: 35px 30px; }
+  .settingsForm label {
+    font: 18px "AvenirNextLTPro-Demi";
+    color: #000;
+    margin-bottom: 15px; }
+  .settingsForm input {
+    margin-bottom: 28px; }
 
 .dashBoardNav ul {
   list-style-type: none;
@@ -264,5 +292,94 @@ input[type=checkbox]:checked + label:before {
     font: 13px "AvenirNextLTPro-Regular";
     text-transform: uppercase;
     transition: all 0.3s; }
+
+#settings main {
+  position: relative;
+  padding-bottom: 150px; }
+#settings aside {
+  float: left;
+  width: 740px; }
+#settings .pageTitle {
+  background: url(../img/settings.png) left center no-repeat; }
+#settings .formTitle {
+  font: 24px "AvenirNextLTPro-Demi";
+  color: #000;
+  margin-bottom: 30px; }
+#settings form {
+  margin-bottom: 25px; }
+#settings input[type=text], #settings input[type=email] {
+  width: 345px; }
+#settings select {
+  width: 260px; }
+#settings input[type=submit] {
+  width: 151px;
+  margin-top: 30px;
+  margin-bottom: 0; }
+#settings .websiteInformation img {
+  border: 12px solid #FFF;
+  outline: 1px solid #d9d9d9;
+  display: inline-block;
+  vertical-align: bottom; }
+#settings .websiteInformation button {
+  transition: all 0.3s;
+  background: transparent;
+  text-transform: uppercase;
+  height: 49px;
+  border-color: #656565;
+  font: 13px "AvenirMedium";
+  padding: 0 30px;
+  margin-left: 25px; }
+#settings .websiteInformation .description {
+  margin-bottom: 28px; }
+#settings .codeForm input[readonly=readonly], #settings .categoriesForm input[readonly=readonly] {
+  width: 602px;
+  background: #FFF;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 18px 0 0; }
+#settings .categoriesForm .btn-default {
+  transition: all 0.3s;
+  background: transparent;
+  text-transform: uppercase;
+  height: 49px;
+  border-color: #656565;
+  font: 13px "AvenirMedium";
+  padding: 0 30px;
+  margin-left: 25px; }
+#settings .categoriesForm .form-group-fixed label {
+  display: block; }
+#settings .categoriesForm .form-group-fixed .form-control {
+  display: inline-block;
+  vertical-align: top; }
+#settings .categoriesForm input[readonly=readonly] {
+  margin-top: 5px; }
+#settings .confirmationForm input[type=text] {
+  width: 672px; }
+#settings .preview {
+  position: absolute;
+  text-align: center;
+  right: 0;
+  bottom: 110px; }
+  #settings .preview__wrapper {
+    width: 500px;
+    min-height: 420px;
+    border: 1px solid #d9d9d9;
+    padding: 46px 50px 30px; }
+  #settings .preview__tradeMark {
+    display: inline-block;
+    margin-top: 50px;
+    font: 14px "AvenirNextLTPro-Regular"; }
+  #settings .preview .description {
+    font-size: 16px; }
+  #settings .preview h3 {
+    font: 36px "AvenirNextLTPro-Regular";
+    color: #000000;
+    text-align: left;
+    margin-bottom: 30px; }
+  #settings .preview h2 {
+    font: 28px "AvenirNextLTPro-Bold";
+    color: #000000; }
+  #settings .preview img {
+    margin-bottom: 55px; }
 
 /*# sourceMappingURL=main.css.map */

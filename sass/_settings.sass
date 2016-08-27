@@ -1,0 +1,121 @@
+#settings
+  main
+    position: relative
+    padding-bottom: 150px
+    
+  aside
+    float: left
+    width: 740px
+    
+
+  .pageTitle
+    background: url(../img/settings.png) left center no-repeat
+
+  .formTitle
+    font: 24px $AvenirDemi
+    color: #000
+    margin-bottom: 30px
+
+  form
+    margin-bottom: 25px
+
+  input[type=text],input[type=email]
+    width: $inputWidth
+
+  select
+    width: $inputDropdownWidth
+    
+  input[type=submit]
+    width: $saveWidth
+    margin-top: 30px
+    margin-bottom: 0
+
+  .websiteInformation
+
+    img
+      border: 12px solid $colorWhite
+      outline: 1px solid #d9d9d9
+      display: inline-block
+      vertical-align: bottom
+
+    button
+      transition: all 0.3s
+      background: transparent
+      text-transform: uppercase
+      height: $inputHeight
+      border-color: #656565
+      font: 13px $AvenirMedium
+      padding: 0 30px
+      margin-left: 25px
+    
+    .description
+      margin-bottom: 28px
+
+  .codeForm, .categoriesForm
+    input[readonly=readonly]
+      width: $inputCopyWidth
+      background: $colorWhite
+      display: inline-block
+      vertical-align: middle
+      margin: 0 18px 0 0
+
+
+  .categoriesForm
+    .btn-default
+      transition: all 0.3s
+      background: transparent
+      text-transform: uppercase
+      height: $inputHeight
+      border-color: #656565
+      font: 13px $AvenirMedium
+      padding: 0 30px
+      margin-left: 25px
+
+    .form-group-fixed
+      label
+        display: block
+
+      .form-control
+        display: inline-block
+        vertical-align: top
+
+    input[readonly=readonly]
+      margin-top: 5px
+
+  .confirmationForm
+    input[type=text]
+      width: 672px
+
+  .preview
+    position: absolute
+    text-align: center
+    right: 0
+    bottom: 110px
+
+    &__wrapper
+      width: 500px
+      min-height: 420px
+      border: $colorForBorder
+      padding: 46px 50px 30px
+
+    &__tradeMark
+      display: inline-block
+      margin-top: 50px
+      font: 14px $AvenirRegular
+      
+    .description
+      font-size: 16px
+
+    h3
+      font: 36px $AvenirRegular
+      color: #000000
+      text-align: left
+      margin-bottom: 30px
+      
+    h2
+      font: 28px $AvenirBold
+      color: #000000
+
+    img
+      margin-bottom: 55px
+

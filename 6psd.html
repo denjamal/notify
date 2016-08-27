@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" id ="settings">
+<head>
+    <meta charset="utf-8" />
+    <title>Notify</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--для адаптивного дизайна-->
+    <link rel="stylesheet" type = "text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type = "text/css" href="libs/bootstrap/bootstrap.css" /><!--bootstrap-->
+    <link rel="stylesheet" type = "text/css" href="libs/font%20awesome/css/font-awesome.min.css" /><!--font awesome-->
+    <link rel="stylesheet" type = "text/css" href="css/fonts.css" /><!--fonts-->
+    <link rel="stylesheet" type = "text/css" href="css/main.css" /><!--main css-->
+    <link rel="stylesheet" type = "text/css" href="css/media.css" /><!--@media-->
+    <!--[if lt IE 10]>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <section class ="clearfix">
+        <div class="logo">
+            <a href="#"><h3>Notify</h3></a>
+        </div>
+        <nav>
+            <ul class="clearfix">
+                <li><a href="#">Dashboards</a></li>
+                <li><a href="#">New Notification</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#"  class="active">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<main class="clearfix">
+    <aside>
+        <h2 class="pageTitle">Settings</h2>
+        <div>
+            <h2 class="formTitle">Website Information</h2>
+            <form action="#" class="websiteInformation settingsForm">
+                <div class="form-group">
+                    <label for="webSiteName">Website Name</label>
+                    <input type="text" class="form-control" id="webSiteName" placeholder="" value="Bild.de">
+                </div>
+                <div class="form-group">
+                    <label for="emailAddress">Email Address</label>
+                    <input type="email" class="form-control" id="emailAddress" placeholder="" value="mail@bild.de">
+                </div>
+                <div class="form-group">
+                    <label for="logoImg">Logo</label>
+                    <input type="file" class="hidden upload-file" id="logoImg">
+                </div>
+                <div class="form-group">
+                    <img src="img/logo.jpg" alt="logo"/> <button class="btn btn-default js-upload-file">Upload New Logo</button>
+                </div>
+                <span class="description">
+                    Your logo will be shown as default for every notification.
+                </span>
+                <div class="form-group">
+                    <label for="localTime">Local Time</label>
+                    <select  class="form-control" id="localTime">
+                        <option value="testValue">London UTC +00:00</option>
+                        <option value="testValue">London UTC +00:00</option>
+                        <option value="testValue">London UTC +00:00</option>
+                        <option value="testValue">London UTC +00:00</option>
+                        <option value="testValue">London UTC +00:00</option>
+                        <option value="testValue">London UTC +00:00</option>
+                        <option value="testValue">London UTC +00:00</option>
+                        <option value="testValue">London UTC +00:00</option>
+                    </select>
+                </div>
+                <input type="submit" class ="form-control" value ="SAVE"/>
+            </form>
+        </div>
+        <div>
+            <h2 class="formTitle">Code</h2>
+            <form action="#" class="codeForm settingsForm">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="copyCode" value="<html><head><meta charset='utf-8'</head><body><script></bod>" readonly="readonly">
+                    <button class="copyBtn"></button>
+                </div>
+                <span class="description">Copy and paste this code before  tags on your website pages.</span>
+            </form>
+        </div>
+        <div>
+            <h2 class="formTitle">Categories</h2>
+            <form action="#" class="categoriesForm settingsForm">
+                <div class="form-group form-group-fixed">
+                    <label for="catName">Category Name</label>
+                    <input type="text" class="form-control" id="catName"  value="Sport">
+                    <button class="btn btn-default">ADD</button>
+                </div>
+                <div class="form-group">
+                    <label for="webSiteName">Category Code</label>
+                    <select class="form-control" id="catCode" >
+                        <option value="testValue">Sport</option>
+                        <option value="testValue">Sport</option>
+                        <option value="testValue">London UTC +00:00</option>
+                        <option value="testValue">London UTC +00:00</option>
+                        <option value="testValue">London UTC +00:00</option>
+                        <option value="testValue">London UTC +00:00</option>
+                        <option value="testValue">London UTC +00:00</option>
+                        <option value="testValue">London UTC +00:00</option>
+                    </select>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="copyCode1" value="<html><head><meta charset='utf-8'</head><body><script></bod>" readonly="readonly">
+                        <button class="copyBtn"></button>
+                    </div>
+                    <span class="description">Copy and paste this code before  tags on your website pages.</span>
+                </div>
+            </form>
+        </div>
+        <div>
+            <h2 class="formTitle">Confirmation Window</h2>
+            <form action="#" class="confirmationForm settingsForm">
+                <div class="form-group">
+                    <label for="confTitle">Title</label>
+                    <input type="text" class="form-control" id="confTitle" placeholder="" value="Click on “Allow” to confirm push Notifications ">
+                </div>
+                <div class="form-group">
+                    <label for="confDescription">Description</label>
+                    <input type="text" class="form-control" id="confDescription" placeholder="" value="Get updates and offers from Bild.de by subscribing to push notifications">
+                </div>
+                <input type="submit" class ="form-control" value ="SAVE"/>
+            </form>
+        </div>
+    </aside>
+    <div class="preview">
+        <h3>Preview</h3>
+        <div class="preview__wrapper">
+            <img src="img/logo.jpg" alt="logo"/>
+            <h2>Click on “Allow” to confirm <br/>push Notifications </h2>
+            <span class="description">
+                Get updates and offers from Bild.de by subscribing to push notifications
+            </span>
+            <span class="preview__tradeMark">Powered by Notify</span>
+        </div>
+    </div>
+</main>
+<script src="libs/jquery/jquery-1.11.3.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

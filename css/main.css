@@ -226,4 +226,43 @@ input[type=checkbox]:checked + label:before {
 .dashBoardNav__number {
   font-size: 40px !important; }
 
+.sectionTable .pageTitle {
+  padding-left: 0; }
+
+.table {
+  font: 18px "AvenirNextLTPro-Regular";
+  margin-bottom: 40px; }
+  .table thead {
+    background: #346aa1; }
+    .table thead tr {
+      height: 62px;
+      color: #FFF;
+      text-transform: uppercase;
+      font-family: "AvenirNextLTPro-Demi"; }
+  .table th, .table td {
+    vertical-align: middle !important;
+    padding-left: 46px !important;
+    border-top: none !important;
+    height: 56px; }
+  .table th:nth-child(1) {
+    width: 345px; }
+  .table th:nth-child(2) {
+    width: 175px; }
+  .table th:nth-child(3) {
+    width: 165px; }
+  .table th:nth-child(4) {
+    width: 158px; }
+  .table tbody tr:nth-of-type(odd) {
+    background: #f2f2f2; }
+  .table tbody tr:nth-of-type(even) {
+    background: #fbfbfb; }
+
+.notification {
+  text-align: center; }
+  .notification button {
+    padding: 17px 25px;
+    font: 13px "AvenirNextLTPro-Regular";
+    text-transform: uppercase;
+    transition: all 0.3s; }
+
 /*# sourceMappingURL=main.css.map */

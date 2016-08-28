@@ -216,6 +216,87 @@ header {
     font: 18px "AvenirNextLTPro-Demi";
     margin-top: 20px; }
 
+.plugin {
+  position: fixed;
+  bottom: 30px;
+  right: 60px;
+  width: 511px;
+  z-index: 1000;
+  padding-bottom: 105px; }
+  .plugin__container {
+    background: #FFF;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+    position: relative;
+    z-index: 10;
+    min-height: 147px;
+    padding: 15px; }
+    .plugin__container:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 50px;
+      height: 16px;
+      right: 20px;
+      bottom: 0px;
+      background: #FFF;
+      z-index: 10; }
+    .plugin__container img {
+      float: left; }
+  .plugin__text {
+    float: left;
+    display: inline-block;
+    max-width: 360px;
+    margin-left: 20px; }
+    .plugin__text h3 {
+      font: 16px "AvenirNextLTPro-Bold";
+      color: #346aa1;
+      margin: 0 0 10px 0; }
+    .plugin__text p {
+      font: 14px "AvenirMedium";
+      color: #000;
+      line-height: 19px; }
+    .plugin__text input[type=submit] {
+      height: 37px;
+      display: block;
+      margin: 10px auto !important;
+      font-size: 14px;
+      width: 113px !important; }
+  .plugin__close {
+    position: absolute;
+    right: 17px;
+    top: 7px;
+    font-size: 25px;
+    color: #000;
+    cursor: pointer; }
+  .plugin__triangle {
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 34px;
+    bottom: -8px;
+    background: #FFF;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+    z-index: 0;
+    border-top: none; }
+  .plugin__img {
+    position: absolute;
+    background: url(../img/Plugin.png);
+    height: 87px;
+    width: 87px;
+    right: 0;
+    bottom: 0;
+    cursor: pointer; }
+    .plugin__img .badge {
+      position: absolute;
+      right: 13px;
+      top: 0;
+      background-color: red; }
+
 #loginPage {
   min-height: 100vh;
   min-height: 100%;

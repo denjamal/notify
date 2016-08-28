@@ -255,3 +255,98 @@ header
     color: $colorWhite
     font: 18px $AvenirDemi
     margin-top: 20px
+
+//style for notification plugin
+
+.plugin
+  position: fixed
+  bottom: 30px
+  right: 60px
+  width: 511px
+  z-index: 1000
+  padding-bottom: 105px
+
+  &__container
+    background: $colorWhite
+    border: $colorForBorder
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35)
+    position: relative
+    z-index: 10
+    min-height: 147px
+    padding: 15px
+
+    &:after
+      content: ""
+      display: block
+      position: absolute
+      width: 50px
+      height: 16px
+      right: 20px
+      bottom: 0px
+      background: $colorWhite
+      z-index: 10
+      
+    img
+      float: left
+
+  &__text
+    float: left
+    display: inline-block
+    max-width: 360px
+    margin-left: 20px
+
+    h3
+      font: 16px $AvenirBold
+      color: $colorMainBlue
+      margin: 0 0 10px 0
+
+    p
+      font: 14px $AvenirMedium
+      color: #000
+      line-height: 19px
+
+    input[type=submit]
+      height: 37px
+      display: block
+      margin: 10px auto !important
+      font-size: 14px
+      width: 113px !important
+
+  &__close
+    position: absolute
+    right: 17px
+    top: 7px
+    font-size: 25px
+    color: #000
+    cursor: pointer
+
+  &__triangle
+    display: block
+    position: absolute
+    width: 16px
+    height: 16px
+    right: 34px
+    bottom: -8px
+    background: $colorWhite
+    transform: rotate(45deg)
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35)
+    z-index: 0
+    border-top: none
+
+  &__img
+    position: absolute
+    background: url(../img/Plugin.png)
+    height: 87px
+    width: 87px
+    right: 0
+    bottom: 0
+    cursor: pointer
+    
+    .badge
+      position: absolute
+      right: 13px
+      top: 0
+      background-color: red
+
+      
+      

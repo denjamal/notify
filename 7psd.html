@@ -71,7 +71,7 @@
                 <div class="form-group">
                     <button class="btn btn-default uploadFileBtn js-upload-file">Upload Custom Image</button>
                 </div>
-                <input type="submit" class ="form-control popupSave" value ="send notification"/>
+                <input type="submit" class ="form-control popupSend" value ="send notification"/>
             </form>
         </div>
     </aside>
@@ -90,9 +90,23 @@
     </div>
 </main>
 <!--magnific popup hidden block-->
-<div id="save-popup" class="mfp-hide">
-    <h3>Saved</h3>
-    <input type="submit" value="Ok" class="closePopup form-control"/>
+<div id="sendNotification-popup" class="mfp-hide">
+    <h1>Please confirm the notification</h1>
+    <div class="notifPreview clearfix">
+        <img src="img/notification-img.jpg" alt="logo"/>
+        <div class="notifPreview__content">
+            <h3>This will be the longest possible title</h3>
+            <p class="notifPreview__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            </p>
+            <a href ="http://www.toptab.net" class="notifPreview__link">http://www.toptab.net</a>
+        </div>
+    </div>
+    <div class ="sendNotification-popup__category">
+        Category: Uncategorised
+    </div>
+    <input type="submit" value="Edit" class="closePopup form-control"/>
+    <input type="submit" value="Send!" class="closePopup form-control"/>
 </div>
 <!--magnific popup hidden block-->
 <script src="libs/jquery/jquery-1.11.3.min.js"></script>

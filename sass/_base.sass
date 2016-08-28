@@ -179,6 +179,8 @@ header
   min-height: 115px
   border: $colorForBorder
   padding: 6px
+  background: $colorWhite
+  text-align: left
 
   img, &__content
     float: left
@@ -188,12 +190,20 @@ header
     padding-left: 12px
 
   p
-    font: 14px $AvenirRegular
+    font: 14px $AvenirMedium
+    color: #000
 
   h3
     font: 16px $AvenirBold
     color: $colorMainBlue
     margin: 6px 0 6px 0
+
+  a
+    font: 14px $AvenirRegular
+    color: #000000
+    text-decoration: none
+    &:focus
+      text-decoration: none
 
 
 //Popup window style 
@@ -220,3 +230,28 @@ header
     font: 36px $AvenirRegular
     margin-bottom: 0
 
+#sendNotification-popup
+  display: inline-block
+
+  h1
+    color: $colorWhite
+    font: 36px $AvenirBold
+    margin-bottom: 40px
+
+  .notifPreview
+    margin: 0 auto
+    
+  input[type=submit]
+    display: inline-block
+    width: 150px !important
+    margin-top: 30px !important
+
+  input[type=submit]:first-of-type
+    background: #717171 !important
+    border: none
+    margin-right: 16px !important
+
+  .sendNotification-popup__category
+    color: $colorWhite
+    font: 18px $AvenirDemi
+    margin-top: 20px

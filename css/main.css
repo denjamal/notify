@@ -152,18 +152,27 @@ header {
   width: 450px;
   min-height: 115px;
   border: 1px solid #d9d9d9;
-  padding: 6px; }
+  padding: 6px;
+  background: #FFF;
+  text-align: left; }
   .notifPreview img, .notifPreview__content {
     float: left; }
   .notifPreview__content {
     max-width: 333px;
     padding-left: 12px; }
   .notifPreview p {
-    font: 14px "AvenirNextLTPro-Regular"; }
+    font: 14px "AvenirMedium";
+    color: #000; }
   .notifPreview h3 {
     font: 16px "AvenirNextLTPro-Bold";
     color: #346aa1;
     margin: 6px 0 6px 0; }
+  .notifPreview a {
+    font: 14px "AvenirNextLTPro-Regular";
+    color: #000000;
+    text-decoration: none; }
+    .notifPreview a:focus {
+      text-decoration: none; }
 
 .mfp-content {
   text-align: center; }
@@ -185,6 +194,27 @@ header {
   #save-popup h3 {
     font: 36px "AvenirNextLTPro-Regular";
     margin-bottom: 0; }
+
+#sendNotification-popup {
+  display: inline-block; }
+  #sendNotification-popup h1 {
+    color: #FFF;
+    font: 36px "AvenirNextLTPro-Bold";
+    margin-bottom: 40px; }
+  #sendNotification-popup .notifPreview {
+    margin: 0 auto; }
+  #sendNotification-popup input[type=submit] {
+    display: inline-block;
+    width: 150px !important;
+    margin-top: 30px !important; }
+  #sendNotification-popup input[type=submit]:first-of-type {
+    background: #717171 !important;
+    border: none;
+    margin-right: 16px !important; }
+  #sendNotification-popup .sendNotification-popup__category {
+    color: #FFF;
+    font: 18px "AvenirNextLTPro-Demi";
+    margin-top: 20px; }
 
 #loginPage {
   min-height: 100vh;

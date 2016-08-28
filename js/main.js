@@ -13,6 +13,14 @@ $('.popupSave').magnificPopup({
         type: 'inline'
     }
 });
+$('.popupSend').magnificPopup({
+    items: {
+        src: '#sendNotification-popup',
+        type: 'inline'
+    }
+});
+
+
 
 //custom close popup button
 $(".closePopup").click(function(e){

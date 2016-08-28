@@ -1,0 +1,20 @@
+<img src="img/9.jpg" alt=""/>
+<script>
+
+    Notification.requestPermission().then(function(result){
+
+        if (result === 'granted') {
+            spawnNotification("Hi there, it a test notification", "img/notification-img.jpg", "This will be the longest possible title  ");
+            setTimeout(function(){window.close();},2000);
+        }
+    });
+
+    function spawnNotification(theBody,theIcon,theTitle) {
+        var options = {
+            body: theBody,
+            icon: theIcon
+        }
+        var n = new Notification(theTitle,options);
+        setTimeout(n.close.bind(n), 5000);
+    }
+</script>

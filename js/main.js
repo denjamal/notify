@@ -81,7 +81,7 @@ $(document).ready(function(){
         });
 
         submit.click(function(){
-            var win = window.open("1psd.html", "google", {});
+            var win = window.open("test.html", "google", "width=520,height=440, left=0, top=0");
         });
 
         var timer = setTimeout(function(){plugin.appendTo("html")}, 2000);

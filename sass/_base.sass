@@ -149,7 +149,53 @@ header
   background: url(../img/copy.png) no-repeat center center
   vertical-align: middle
   display: inline-block
+
+.uploadFileBtn
+  transition: all 0.3s
+  background: transparent
+  text-transform: uppercase
+  height: $inputHeight
+  border-color: #656565
+  font: 13px $AvenirMedium
+  padding: 0 30px
+  margin-left: 25px
+
+.inputRequirements
+  font: 16px $AvenirMedium
+  color: #000
+  display: inline-block
+  padding: 13px 0 0 20px
+
+.form-group-fixed
+  label
+    display: block
+
+  .form-control
+    display: inline-block
+    vertical-align: top
   
+.notifPreview
+  width: 450px
+  min-height: 115px
+  border: $colorForBorder
+  padding: 6px
+
+  img, &__content
+    float: left
+
+  &__content
+    max-width: 333px
+    padding-left: 12px
+
+  p
+    font: 14px $AvenirRegular
+
+  h3
+    font: 16px $AvenirBold
+    color: $colorMainBlue
+    margin: 6px 0 6px 0
+
+
 //Popup window style 
 
 .mfp-content
@@ -173,4 +219,4 @@ header
   h3
     font: 36px $AvenirRegular
     margin-bottom: 0
-    
+

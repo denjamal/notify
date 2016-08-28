@@ -126,6 +126,45 @@ header {
   vertical-align: middle;
   display: inline-block; }
 
+.uploadFileBtn {
+  transition: all 0.3s;
+  background: transparent;
+  text-transform: uppercase;
+  height: 49px;
+  border-color: #656565;
+  font: 13px "AvenirMedium";
+  padding: 0 30px;
+  margin-left: 25px; }
+
+.inputRequirements {
+  font: 16px "AvenirMedium";
+  color: #000;
+  display: inline-block;
+  padding: 13px 0 0 20px; }
+
+.form-group-fixed label {
+  display: block; }
+.form-group-fixed .form-control {
+  display: inline-block;
+  vertical-align: top; }
+
+.notifPreview {
+  width: 450px;
+  min-height: 115px;
+  border: 1px solid #d9d9d9;
+  padding: 6px; }
+  .notifPreview img, .notifPreview__content {
+    float: left; }
+  .notifPreview__content {
+    max-width: 333px;
+    padding-left: 12px; }
+  .notifPreview p {
+    font: 14px "AvenirNextLTPro-Regular"; }
+  .notifPreview h3 {
+    font: 16px "AvenirNextLTPro-Bold";
+    color: #346aa1;
+    margin: 6px 0 6px 0; }
+
 .mfp-content {
   text-align: center; }
 
@@ -341,15 +380,6 @@ input[type=checkbox]:checked + label:before {
   outline: 1px solid #d9d9d9;
   display: inline-block;
   vertical-align: bottom; }
-#settings .websiteInformation button {
-  transition: all 0.3s;
-  background: transparent;
-  text-transform: uppercase;
-  height: 49px;
-  border-color: #656565;
-  font: 13px "AvenirMedium";
-  padding: 0 30px;
-  margin-left: 25px; }
 #settings .websiteInformation .description {
   margin-bottom: 28px; }
 #settings .codeForm input[readonly=readonly], #settings .categoriesForm input[readonly=readonly] {
@@ -402,5 +432,36 @@ input[type=checkbox]:checked + label:before {
     color: #000000; }
   #settings .preview img {
     margin-bottom: 55px; }
+
+#newNotification main {
+  position: relative;
+  padding-bottom: 150px; }
+#newNotification aside {
+  float: left;
+  width: 740px; }
+  #newNotification aside .pageTitle {
+    background: url(../img/newNotification.png) center left no-repeat; }
+#newNotification .uploadFileBtn {
+  margin-left: 0;
+  margin-top: -15px;
+  width: 260px; }
+#newNotification input[type=text], #newNotification textarea {
+  width: 511px; }
+#newNotification input[type=submit] {
+  width: 360px;
+  margin: 40px 0 0 0; }
+#newNotification textarea {
+  height: 99px;
+  resize: none; }
+#newNotification select {
+  width: 260px; }
+#newNotification .preview {
+  position: absolute;
+  right: 47px;
+  top: 47px; }
+  #newNotification .preview h2 {
+    font: 36px "AvenirNextLTPro-Regular";
+    color: #000000;
+    margin-bottom: 37px; }
 
 /*# sourceMappingURL=main.css.map */

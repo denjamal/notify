@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" id ="newNotification">
+<head>
+    <meta charset="utf-8" />
+    <title>Notify</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--для адаптивного дизайна-->
+    <link rel="stylesheet" type = "text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type = "text/css" href="libs/bootstrap/bootstrap.css" /><!--bootstrap-->
+    <link rel="stylesheet" type = "text/css" href="libs/font%20awesome/css/font-awesome.min.css" /><!--font awesome-->
+    <link rel="stylesheet" type = "text/css" href="css/fonts.css" /><!--fonts-->
+    <link rel="stylesheet" type = "text/css" href="libs/Magnific-popup/dist/magnific-popup.css" /><!--magnific-popup-->
+    <link rel="stylesheet" type = "text/css" href="css/main.css" /><!--main css-->
+    <link rel="stylesheet" type = "text/css" href="css/media.css" /><!--@media-->
+    <!--[if lt IE 10]>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <section class ="clearfix">
+        <div class="logo">
+            <a href="#"><h3>Notify</h3></a>
+        </div>
+        <nav>
+            <ul class="clearfix">
+                <li><a href="#">Dashboards</a></li>
+                <li><a href="#"  class="active">New Notification</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<main class="clearfix">
+    <aside>
+        <h2 class="pageTitle">New Notification</h2>
+        <div>
+            <form action="#" class="settingsForm">
+                <div class="form-group form-group-fixed">
+                    <label for="notificationTitle">Title</label>
+                    <input type="text" class="form-control" id="notificationTitle">
+                    <span class = "inputRequirements">50 charachters</span>
+                </div>
+                <div class="form-group form-group-fixed">
+                    <label for="notificationMessage">Message</label>
+                    <textarea  class="form-control" id="notificationMessage" > </textarea>
+                    <span class = "inputRequirements">100 charachters</span>
+                </div>
+                <div class="form-group">
+                    <label for="notificationLink">Link</label>
+                    <input type="text" class="form-control" id="notificationLink">
+                </div>
+                <div class="form-group">
+                    <label for="notificationCategory">Category Code</label>
+                    <select  class="form-control" id="notificationCategory">
+                        <option value="testValue">London UTC +00:00</option>
+                        <option value="testValue">London UTC +00:00</option>
+                        <option value="testValue">London UTC +00:00</option>
+                        <option value="testValue">London UTC +00:00</option>
+                        <option value="testValue">London UTC +00:00</option>
+                        <option value="testValue">London UTC +00:00</option>
+                        <option value="testValue">London UTC +00:00</option>
+                        <option value="testValue">London UTC +00:00</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="notificationIMG">Custom Image</label>
+                    <input type="file" class="hidden upload-file" id="notificationIMG">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-default uploadFileBtn js-upload-file">Upload Custom Image</button>
+                </div>
+                <input type="submit" class ="form-control popupSave" value ="send notification"/>
+            </form>
+        </div>
+    </aside>
+    <div class="preview">
+        <h2>Preview</h2>
+        <div class="notifPreview clearfix">
+            <img src="img/notification-img.jpg" alt="logo"/>
+            <div class="notifPreview__content">
+                <h3>This will be the longest possible title</h3>
+                 <p class="notifPreview__text">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                </p>
+                <a href ="http://www.toptab.net" class="notifPreview__link">http://www.toptab.net</a>
+            </div>
+        </div>
+    </div>
+</main>
+<!--magnific popup hidden block-->
+<div id="save-popup" class="mfp-hide">
+    <h3>Saved</h3>
+    <input type="submit" value="Ok" class="closePopup form-control"/>
+</div>
+<!--magnific popup hidden block-->
+<script src="libs/jquery/jquery-1.11.3.min.js"></script>
+<script src="libs/Magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

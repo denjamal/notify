@@ -75,9 +75,9 @@ $(document).ready(function(){
             badge.toggleClass("hidden");
         });
 
-        divImg.click(function(){
-            pluginContainer.toggleClass("hidden");
-            badge.toggleClass("hidden");
+        divImg.hover(function(){
+            pluginContainer.removeClass("hidden");
+            badge.addClass("hidden");
         });
 
         submit.click(function(){

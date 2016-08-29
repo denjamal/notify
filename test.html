@@ -1,4 +1,42 @@
-<img src="img/9.jpg" alt=""/>
+<!DOCTYPE html>
+<html lang="en" id ="settings">
+<head>
+    <meta charset="utf-8" />
+    <title>Notify</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--для адаптивного дизайна-->
+    <link rel="stylesheet" type = "text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type = "text/css" href="libs/bootstrap/bootstrap.css" /><!--bootstrap-->
+    <link rel="stylesheet" type = "text/css" href="libs/font%20awesome/css/font-awesome.min.css" /><!--font awesome-->
+    <link rel="stylesheet" type = "text/css" href="css/fonts.css" /><!--fonts-->
+    <link rel="stylesheet" type = "text/css" href="libs/Magnific-popup/dist/magnific-popup.css" /><!--magnific-popup-->
+    <link rel="stylesheet" type = "text/css" href="css/main.css" /><!--main css-->
+    <link rel="stylesheet" type = "text/css" href="css/media.css" /><!--@media-->
+    <!--[if lt IE 10]>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    <style>
+        #settings  .preview{
+            position: static;
+            text-align: center;
+        }
+        #settings  .preview__wrapper {
+            margin: auto;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="preview">
+        <div class="preview__wrapper">
+            <img src="img/logo.jpg" alt="logo"/>
+            <h2>Click on “Allow” to confirm <br/>push Notifications </h2>
+            <span class="description">
+                Get updates and offers from Bild.de by subscribing to push notifications
+            </span>
+            <span class="preview__tradeMark">Powered by Notify</span>
+        </div>
+    </div>
 <script>
 
     Notification.requestPermission().then(function(result){
@@ -18,3 +56,5 @@
         setTimeout(n.close.bind(n), 5000);
     }
 </script>
+</body>
+</html>
